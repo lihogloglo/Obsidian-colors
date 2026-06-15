@@ -1,0 +1,10 @@
+{
+  "id": "bbcode-text-colors",
+  "name": "BBCode Text Colors",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Render lightweight BBCode-style color tags without adding HTML to your notes.",
+  "author": "Metzo",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}

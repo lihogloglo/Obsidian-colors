@@ -1,0 +1,119 @@
+.bb-color-text {
+  color: var(--bb-color);
+}
+
+.bb-color-token {
+  color: var(--text-faint);
+  opacity: 0.6;
+}
+
+.bb-color-picker {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.bb-color-button {
+  align-items: center;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  color: var(--text-normal);
+  display: flex;
+  gap: 8px;
+  min-height: 34px;
+  padding: 6px 8px;
+}
+
+.bb-color-button:hover {
+  background: var(--background-modifier-hover);
+}
+
+.bb-color-swatch {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 999px;
+  flex: 0 0 16px;
+  height: 16px;
+  width: 16px;
+}
+
+.bb-color-custom {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr auto;
+  margin-top: 12px;
+}
+
+.bb-color-palette-editor {
+  font-family: var(--font-monospace);
+  min-height: 160px;
+  width: 100%;
+}
+
+.bb-color-toolbar {
+  align-items: center;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  display: flex;
+  gap: 4px;
+  max-width: min(520px, calc(100vw - 32px));
+  overflow-x: auto;
+  padding: 6px;
+  position: fixed;
+  right: 16px;
+  bottom: 36px;
+  z-index: var(--layer-popover);
+}
+
+.bb-color-toolbar-button {
+  align-items: center;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--text-muted);
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 28px;
+  justify-content: center;
+  padding: 0;
+  width: 28px;
+}
+
+.bb-color-toolbar-button:hover {
+  background: var(--background-modifier-hover);
+  border-color: var(--background-modifier-border);
+  color: var(--text-normal);
+}
+
+.bb-color-toolbar-swatch {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 999px;
+  height: 16px;
+  width: 16px;
+}
+
+.bb-color-status {
+  align-items: center;
+  display: inline-flex;
+}
+
+.bb-color-status-button {
+  align-items: center;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--text-muted);
+  display: inline-flex;
+  height: 22px;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.bb-color-status-button:hover,
+.bb-color-status-button.is-active {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
